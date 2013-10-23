@@ -1,0 +1,8 @@
+D:\Gerard\Dropbox\TFC\codi\StringConcat\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Gerard\Dropbox\TFC\codi\StringConcat\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Gerard\Dropbox\TFC\codi\StringConcat\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+D:\Gerard\Dropbox\TFC\codi\StringConcat\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+D:\Gerard\Dropbox\TFC\codi\AlterNative.Tests\StringConcat\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+D:\Gerard\Dropbox\TFC\codi\AlterNative.Tests\StringConcat\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+D:\Gerard\Dropbox\TFC\codi\AlterNative.Tests\StringConcat\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Gerard\Dropbox\TFC\codi\AlterNative.Tests\StringConcat\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
