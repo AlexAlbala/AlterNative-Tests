@@ -3,7 +3,7 @@
 #include "System/IO/File.h"
 #include "System/IO/FileStream.h"
 #include "System/Convert.h"
-#include "System/Text/UTF8Encoding.h"
+#include "System/Text/Encoding.h"
 #include "System/Console.h"
 
 using namespace System::IO;

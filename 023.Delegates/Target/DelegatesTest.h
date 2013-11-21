@@ -8,9 +8,9 @@ namespace Delegates {
 	class DelegatesTest : public virtual Object
 	{
 		private:
-		DELEGATE(void) Target1Del;
+			DELEGATE(void) Target1Del;
 		private:
-		DELEGATE(int, int) TargetIntInt;
+			DELEGATE(int, int) TargetIntInt;
 		public:
 			void Test();
 		public:
