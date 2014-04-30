@@ -12,7 +12,7 @@ namespace Constraints {
 		class Example2_T_Base : public virtual Object{
 			public:
 			Example2_T_Base(){
-				Where_T_is_New();
+				Where_T_is_New(T);
 			}
 		};
 

@@ -19,7 +19,7 @@ namespace Properties {
 			void setEmptyProperty(int value);
 		public:
 			void CallProperties();
-		private:
+		public:
 			int EmptyProperty_var;
 		public:
 			MyClassA();

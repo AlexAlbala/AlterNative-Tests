@@ -13,7 +13,7 @@ namespace Templates {
 		MyClass_T<int>* myInt = new MyClass_T<int>();
 		myInt->set(23);
 		MyClass_T<float>* myFloat = new MyClass_T<float>();
-		myFloat->set(53.6f);
+		myFloat->set((float)53.6);
 		Console::WriteLine(myInt->get());
 		Console::WriteLine(myFloat->get());
 	}

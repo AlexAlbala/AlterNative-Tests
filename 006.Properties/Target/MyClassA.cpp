@@ -9,11 +9,11 @@ namespace Properties {
 	}
 	int MyClassA::getEmptyProperty()
 	{
-		return this->EmptyProperty_var;
+		return EmptyProperty_var;
 	}
 	void MyClassA::setEmptyProperty(int value)
 	{
-		this->EmptyProperty_var = value;
+		EmptyProperty_var = value;
 	}
 	void MyClassA::CallProperties()
 	{
@@ -31,7 +31,7 @@ namespace Properties {
 	MyClassA::MyClassA()
 	{
 		_data = 6;
-		EmptyProperty_var = 0;
+		EmptyProperty_var = (int)(0);
 	}
 
 }

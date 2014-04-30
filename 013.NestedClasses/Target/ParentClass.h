@@ -10,7 +10,7 @@ namespace NestedClasses {
 		class NestedClass1 : public virtual Object
 		{
 			public:
-			void NestedClass1::f()
+			void f()
 			{
 				Console::WriteLine(new String("NestedClass1"));
 			}
@@ -22,13 +22,13 @@ namespace NestedClasses {
 			class NestedClass3 : public virtual Object
 			{
 				public:
-				void NestedClass3::f()
+				void f()
 				{
 					Console::WriteLine(new String("NestedClass3"));
 				}
 			};
 			public:
-			void NestedClass2::f()
+			void f()
 			{
 				Console::WriteLine(new String("NestedClass2"));
 			}

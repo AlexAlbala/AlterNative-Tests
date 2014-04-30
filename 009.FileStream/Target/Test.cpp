@@ -17,7 +17,7 @@ void Test::Main(){
 	}
 	fs->Close();
 	fs = File::OpenRead(path);
-	Array<byte>* b = new Array<byte>(1024);
+	Array<char>* b = new Array<char>(1024);
 	UTF8Encoding* temp = new UTF8Encoding();
 	while (fs->Read(b, 0, b->Length) > 0) {
 		String* s = temp->GetString(b);
@@ -26,7 +26,7 @@ void Test::Main(){
 }
 void Test::AddText(FileStream* fs, String* value)
 {
-	Array<byte>* info = (new UTF8Encoding())->GetBytes(value);
+	Array<char>* info = (new UTF8Encoding())->GetBytes(value);
 	fs->Write(info, 0, info->Length);
 }
 
