@@ -1,5 +1,5 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
-PROJECT(ForEachProj CXX)
+PROJECT(TimerProj CXX)
 ##################################################
 #Enable C++11 mode
 ##################################################
@@ -20,16 +20,16 @@ endif()
 SET_PROPERTY(GLOBAL PROPERTY GL_IS_RELEASE 0)
 ADD_SUBDIRECTORY(System)
 ADD_SUBDIRECTORY(gc)
-SET(EXECPATH A.cpp A.h Program.cpp Program.h main.cpp A.cpp A.h Program.cpp Program.h main.cpp)
-ADD_EXECUTABLE(ForEach ${EXECPATH})
-TARGET_LINK_LIBRARIES(ForEach System)
-TARGET_LINK_LIBRARIES(ForEach gc-lib)
+SET(EXECPATH Program.cpp Program.h main.cpp Program.cpp Program.h main.cpp)
+ADD_EXECUTABLE(Timer ${EXECPATH})
+TARGET_LINK_LIBRARIES(Timer System)
+TARGET_LINK_LIBRARIES(Timer gc-lib)
 IF(UNIX)
 IF(!ANDROID)
-TARGET_LINK_LIBRARIES(ForEach pthread)
+TARGET_LINK_LIBRARIES(Timer pthread)
 ENDIF()
 ENDIF(UNIX)
-SET(PROJ_NAME ForEach)
+SET(PROJ_NAME Timer)
 ##################################################
 #Find boost libraries
 ##################################################

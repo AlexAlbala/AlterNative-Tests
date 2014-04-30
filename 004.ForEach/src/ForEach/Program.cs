@@ -6,6 +6,13 @@ using System.Collections.Generic;
 
 namespace ForEach
 {
+    class A
+    {
+        public void f()
+        {
+            Console.WriteLine("I'm an object");
+        }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -22,6 +29,15 @@ namespace ForEach
             foreach (float f in myList)
             {
                 Console.WriteLine(f);
+            }
+
+            List<A> myAList = new List<A>();
+            myAList.Add(new A());
+            myAList.Add(new A());
+
+            foreach (A a in myAList)
+            {
+                a.f();
             }
         }
     }

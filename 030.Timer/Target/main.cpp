@@ -1,6 +1,6 @@
 #include "Program.h"
 using namespace System;
-using namespace ForEach;
+using namespace TimerTest;
 
 int main(int argc, char *argv[])
 {
