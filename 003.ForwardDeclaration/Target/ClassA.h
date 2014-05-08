@@ -1,5 +1,5 @@
 #pragma once
-#include "System/System.h"
+#include <System/System.h>
 #include "ClassB.h"
 
 using namespace System;

@@ -1,8 +1,8 @@
 #pragma once
-#include "System/System.h"
+#include <System/System.h>
 #include "MyList.h"
 #include "Node.h"
-#include "System/Console.h"
+#include <System/Console.h>
 
 using namespace System;
 namespace List {

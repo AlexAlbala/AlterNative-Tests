@@ -1,9 +1,9 @@
 #pragma once
-#include "System/System.h"
+#include <System/System.h>
 #include "IA.h"
 #include "IB_T.h"
 #include "IC_T.h"
-#include "System/Console.h"
+#include <System/Console.h>
 
 using namespace System;
 namespace ExplicitGenericInterfaces {

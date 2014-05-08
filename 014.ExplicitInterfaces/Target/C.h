@@ -1,9 +1,9 @@
 #pragma once
-#include "System/System.h"
+#include <System/System.h>
 #include "IA.h"
 #include "IB.h"
 #include "IC.h"
-#include "System/Console.h"
+#include <System/Console.h>
 
 using namespace System;
 namespace NestedClasses {

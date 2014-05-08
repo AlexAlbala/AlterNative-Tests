@@ -1,6 +1,6 @@
 #pragma once
-#include "System/System.h"
-#include "System/events.h"
+#include <System/System.h>
+#include <System/events.h>
 
 using namespace System;
 namespace SimpleEvent {

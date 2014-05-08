@@ -1,9 +1,9 @@
 #pragma once
-#include "System/System.h"
-#include "System/Threading/Timer.h"
-#include "System/Console.h"
-#include "System/DateTime.h"
-#include "System/Threading/Thread.h"
+#include <System/System.h>
+#include <System/Threading/Timer.h>
+#include <System/Console.h>
+#include <System/DateTime.h>
+#include <System/Threading/Thread.h>
 
 using namespace System::Threading;
 using namespace System;

@@ -1,6 +1,6 @@
 #pragma once
-#include "System/System.h"
-#include "System/Console.h"
+#include <System/System.h>
+#include <System/Console.h>
 #include "MyClassB.h"
 
 using namespace System;

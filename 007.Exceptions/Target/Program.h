@@ -1,7 +1,7 @@
 #pragma once
-#include "System/System.h"
-#include "System/Console.h"
-#include "System/Exception.h"
+#include <System/System.h>
+#include <System/Console.h>
+#include <System/Exception.h>
 
 using namespace System;
 namespace ExceptionExample {

@@ -1,5 +1,5 @@
 #pragma once
-#include "System/System.h"
+#include <System/System.h>
 #include "CovIEnumerator_T.h"
 
 using namespace System;

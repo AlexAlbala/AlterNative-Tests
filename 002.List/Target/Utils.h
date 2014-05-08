@@ -1,6 +1,6 @@
 #pragma once
-#include "System/System.h"
-#include "System/Random.h"
+#include <System/System.h>
+#include <System/Random.h>
 
 using namespace System;
 namespace List {

@@ -1,7 +1,7 @@
 #pragma once
-#include "System/System.h"
+#include <System/System.h>
 #include "MyEnum.h"
-#include "System/Console.h"
+#include <System/Console.h>
 #include "MyIncompleteEnum.h"
 #include "MyDisorderedEnum.h"
 

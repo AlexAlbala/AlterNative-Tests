@@ -1,7 +1,7 @@
 #pragma once
-#include "System/System.h"
-#include "System/Collections/Generic/List.h"
-#include "System/Console.h"
+#include <System/System.h>
+#include <System/Collections/Generic/List.h>
+#include <System/Console.h>
 #include "A.h"
 
 using namespace System::Collections::Generic;

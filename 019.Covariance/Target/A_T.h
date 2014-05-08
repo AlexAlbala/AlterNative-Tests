@@ -1,8 +1,8 @@
 #pragma once
-#include "System/System.h"
+#include <System/System.h>
 #include "CovIEnumerable_T.h"
 #include "CovIEnumerator_T.h"
-#include "System/Console.h"
+#include <System/Console.h>
 #include "B_T.h"
 
 using namespace System;

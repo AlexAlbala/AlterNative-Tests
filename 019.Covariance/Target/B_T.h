@@ -1,7 +1,7 @@
 #pragma once
-#include "System/System.h"
+#include <System/System.h>
 #include "CovIEnumerator_T.h"
-#include "System/Console.h"
+#include <System/Console.h>
 
 using namespace System;
 namespace Covariance {

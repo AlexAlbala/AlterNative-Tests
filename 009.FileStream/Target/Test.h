@@ -1,10 +1,10 @@
 #pragma once
-#include "System/System.h"
-#include "System/IO/File.h"
-#include "System/IO/FileStream.h"
-#include "System/Convert.h"
-#include "System/Text/Encoding.h"
-#include "System/Console.h"
+#include <System/System.h>
+#include <System/IO/File.h>
+#include <System/IO/FileStream.h>
+#include <System/Convert.h>
+#include <System/Text/Encoding.h>
+#include <System/Console.h>
 
 using namespace System::IO;
 using namespace System;

@@ -1,7 +1,7 @@
 #pragma once
-#include "System/System.h"
+#include <System/System.h>
 #include "Person.h"
-#include "System/Console.h"
+#include <System/Console.h>
 #include "John.h"
 #include "Anne.h"
 

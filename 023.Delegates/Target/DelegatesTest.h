@@ -1,7 +1,7 @@
 #pragma once
-#include "System/System.h"
-#include "System/Console.h"
-#include "System/Delegate.h"
+#include <System/System.h>
+#include <System/Console.h>
+#include <System/Delegate.h>
 
 using namespace System;
 namespace Delegates {

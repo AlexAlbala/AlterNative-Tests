@@ -1,7 +1,7 @@
 #pragma once
-#include "System/System.h"
-#include "System/Collections/Generic/Dictionary.h"
-#include "System/Console.h"
+#include <System/System.h>
+#include <System/Collections/Generic/Dictionary.h>
+#include <System/Console.h>
 #include "A.h"
 #include "B.h"
 
