@@ -1,0 +1,9 @@
+*.suo
+*.userprefs
+**/bin
+obj
+*.v11.suo
+**/bin/Debug
+**/bin/Release
+**/Output
+**/src/*/bin
