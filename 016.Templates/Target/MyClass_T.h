@@ -75,6 +75,6 @@ namespace Templates {
 
 	//Type definition
 	template<typename T>
-	class MyClass_T : public _Internal::MyClass_T<T, IsBasic(T)>{
+	class MyClass_T : public _Internal::MyClass_T<T, IsValueType(T)>{
 	};
 }

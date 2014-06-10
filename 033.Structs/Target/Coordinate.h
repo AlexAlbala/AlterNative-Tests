@@ -25,10 +25,12 @@ AlterNative @ 2014
 
 using namespace System;
 namespace Structs {
-	struct Coordinate : public virtual Object
+	struct Coordinate : public virtual ValueType
 	{
 			int x;
 			int y;
 			Coordinate(int x, int y);
+			Coordinate();
+			String* ToString();
 	};
 }

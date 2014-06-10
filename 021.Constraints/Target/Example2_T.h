@@ -63,9 +63,9 @@ namespace Constraints {
 
 	//Type definition
 	template<typename T>
-	class Example2_T : public _Internal::Example2_T<T, IsBasic(T)>{
+	class Example2_T : public _Internal::Example2_T<T, IsValueType(T)>{
 		public:
-		Example2_T() : _Internal::Example2_T<T, IsBasic(T)>(){
+		Example2_T() : _Internal::Example2_T<T, IsValueType(T)>(){
 		}
 	};
 }

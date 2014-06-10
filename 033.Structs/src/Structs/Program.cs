@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Structs
 {
@@ -25,12 +26,17 @@ namespace Structs
 
         public static void Main(string[] args)
         {
+            Coordinate defaultValue = new Coordinate();
 
-            Coordinate c = new Coordinate(1,2);
+            Coordinate c = new Coordinate(1, 2);
             //c.x = 1;
             //c.y = 2;
             f(c);
             Console.WriteLine("c: " + c.x + "  " + c.y);
+
+            List<Object> myList = new List<object>();
+            myList.Add(new Coordinate(0, 0));
+            myList.Add(new Coordinate(1, 1));
         }
     }
 }

@@ -26,5 +26,12 @@ namespace Structs {
 		this->x = x;
 		this->y = y;
 	}
+	Coordinate::Coordinate()
+	{
+	}
+	String* Coordinate::ToString()
+	{
+		return new String(CURRENT_TYPE);
+	}
 
 }

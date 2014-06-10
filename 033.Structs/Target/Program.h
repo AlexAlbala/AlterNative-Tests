@@ -24,8 +24,10 @@ AlterNative @ 2014
 #include <System/System.h>
 #include "Coordinate.h"
 #include <System/Console.h>
+#include <System/Collections/Generic/List.h>
 
 using namespace System;
+using namespace System::Collections::Generic;
 namespace Structs {
 	class Program : public virtual Object
 	{

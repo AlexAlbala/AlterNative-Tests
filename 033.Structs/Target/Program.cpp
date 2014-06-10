@@ -34,6 +34,7 @@ namespace Structs {
 	}
 	void Program::Main(String* args[])
 	{
+		Coordinate defaultValue = Coordinate();
 		Coordinate c = Coordinate(1, 2);
 		Program::f(c);
 		Array<Object>* array = new Array<Object>(4);
@@ -42,6 +43,9 @@ namespace Structs {
 		array->SetData(2, new String("  "));
 		array->SetData(3, BOX<int>(c.y));
 		Console::WriteLine(String::Concat(array));
+		List_T<Object>* myList = new List_T<Object>();
+		myList->Add(BOX<Coordinate>(Coordinate(0, 0)));
+		myList->Add(BOX<Coordinate>(Coordinate(1, 1)));
 	}
 
 }

@@ -121,9 +121,9 @@ namespace ExplicitGenericInterfaces {
 
 	//Type definition
 	template<typename T>
-	class C_T : public _Internal::C_T<T, IsBasic(T)>{
+	class C_T : public _Internal::C_T<T, IsValueType(T)>{
 		public:
-		C_T() : _Internal::C_T<T, IsBasic(T)>(){
+		C_T() : _Internal::C_T<T, IsValueType(T)>(){
 		}
 	};
 }
