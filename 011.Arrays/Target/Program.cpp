@@ -35,7 +35,7 @@ namespace Arrays {
 		Array<long>* arr = new Array<long>(myArray->Length);
 		int pos = 0;
 		for (int j = 0; j < myArray->Length; j += 1) {
-			int i = (*myArray)[j];
+			int i = myArray->GetData(j);
 			arr->SetData(pos++, (long)(i + 50));
 		}
 		this->Test2(myArray, arr);
@@ -49,8 +49,8 @@ namespace Arrays {
 	void Program::Finish(Array<int>* myArray1, Array<long>* myArray2, Array<char>* myArray3)
 	{
 		for (int i = 0; i < myArray1->Length; i += 1) {
-			Console::WriteLine((*myArray1)[i]);
-			Console::WriteLine((*myArray2)[i]);
+			Console::WriteLine(myArray1->GetData(i));
+			Console::WriteLine(myArray2->GetData(i));
 		}
 		Console::WriteLine(myArray3);
 	}

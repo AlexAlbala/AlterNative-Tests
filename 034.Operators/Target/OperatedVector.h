@@ -22,52 +22,28 @@ AlterNative @ 2014
 
 #pragma once
 #include <System/System.h>
-#include "CovIEnumerator_T.h"
-#include <System/Console.h>
 
 using namespace System;
-namespace Covariance {
-	namespace _Internal {
-
-		//The classes defined in namespace _Internal are internal types.
-		//DO NOT modify this code
-
-		template<typename T>
-		class B_T_Base : public virtual CovIEnumerator_T<T>, public virtual Object{
-			public:
-			B_T_Base(){
-				Console::WriteLine(new String("Building B..."));
-			}
-		};
-
-		template<typename T, bool>
-		class B_T  {
-		};
-
-		//Basic types template type
-		template<typename T>
-		class B_T<T, true> : public B_T_Base<T>{
-			public:
-			inline B_T() : B_T_Base<T>()
-			{
-			}
-		};
-
-		//Generic template type
-		template<typename T>
-		class B_T<T, false> : public virtual B_T_Base<Object>{
-			public:
-			inline B_T() : B_T_Base<Object>()
-			{
-			}
-		};
-	}
-
-	//Type definition
-	template<typename T>
-	class B_T : public _Internal::B_T<T, IsValueType(T)>{
+namespace Operators {
+	class OperatedVector : public virtual Object
+	{
 		public:
-		B_T() : _Internal::B_T<T, IsValueType(T)>(){
+			int DimSize;
+		private:
+			Array<float>* m_array;
+		public:
+			void SetData(float value, int x);
+		public:
+			float GetData(int x);
+		public:
+		OperatedVector* operator +(OperatedVector mat2) {
+			OperatedVector* newMatrix = new OperatedVector();
+			for (int x = 0; x < 3; x += 1) {
+				newMatrix->SetData(this->GetData(x) + mat2.GetData(x), x);
+			}
+			return newMatrix;
 		}
+		public:
+			OperatedVector();
 	};
 }

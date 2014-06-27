@@ -74,6 +74,6 @@ namespace Covariance {
 
 	//Type definition
 	template<typename T>
-	class A_T : public _Internal::A_T<T, IsBasic(T)>{
+	class A_T : public _Internal::A_T<T, IsValueType(T)>{
 	};
 }

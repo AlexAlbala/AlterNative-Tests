@@ -75,6 +75,6 @@ namespace InterClassBoxing {
 
 	//Type definition
 	template<typename T>
-	class Container_T : public _Internal::Container_T<T, IsBasic(T)>{
+	class Container_T : public _Internal::Container_T<T, IsValueType(T)>{
 	};
 }

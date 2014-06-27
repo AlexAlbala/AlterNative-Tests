@@ -41,7 +41,7 @@ namespace Dictionary {
 		Console::WriteLine(new String("Now it should print false"));
 		Console::WriteLine(myDict->ContainsKey(3));
 		Console::WriteLine(new String("Now it should print 2"));
-		Console::WriteLine((*myDict)[1]);
+		Console::WriteLine(myDict->GetData(1));
 		Dictionary_T<A, B>* myDict2 = new Dictionary_T<A, B>();
 		A* a = new A();
 		A* a2 = new A();
@@ -55,7 +55,7 @@ namespace Dictionary {
 		Console::WriteLine(new String("Now it should print false"));
 		Console::WriteLine(myDict2->ContainsKey(a));
 		Console::WriteLine(new String("Now it should print \"Hello I'm B\""));
-		(*myDict2)[a2]->f();
+		myDict2->GetData(a2)->f();
 	}
 
 }
