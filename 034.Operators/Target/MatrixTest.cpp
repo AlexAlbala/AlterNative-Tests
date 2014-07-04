@@ -40,7 +40,7 @@ namespace Operators {
 	void MatrixTest::InitMatrix(OperatedVector* mat, float f)
 	{
 		for (int x = 0; x < 3; x += 1) {
-			mat->SetData(f, x);
+			mat->SetData(x, f);
 		}
 	}
 	void MatrixTest::PrintMatrix(OperatedVector* mat)

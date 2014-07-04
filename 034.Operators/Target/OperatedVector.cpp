@@ -25,9 +25,9 @@ namespace Operators {
 	float OperatedVector::GetData(int x){
 		return this->m_array->GetData(x);
 	}
-	void OperatedVector::SetData(float value, int x)
+	void OperatedVector::SetData(int x, float value)
 	{
-		this->m_array->SetData(value, x);
+		this->m_array->SetData(x, value);
 	}
 	OperatedVector::OperatedVector()
 	{

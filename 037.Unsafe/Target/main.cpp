@@ -20,30 +20,16 @@ AlterNative @ 2014
 
 ***********************************************************************************/
 
-#pragma once
-#include <System/System.h>
-
+#include "UnsafeTest.h"
 using namespace System;
-namespace Operators {
-	class OperatedVector : public virtual Object
-	{
-		public:
-			int DimSize;
-		private:
-			Array<float>* m_array;
-		public:
-			void SetData(int x, float value);
-		public:
-			float GetData(int x);
-		public:
-		OperatedVector* operator +(OperatedVector mat2) {
-			OperatedVector* newMatrix = new OperatedVector();
-			for (int x = 0; x < 3; x += 1) {
-				newMatrix->SetData(x, this->GetData(x) + mat2.GetData(x));
-			}
-			return newMatrix;
-		}
-		public:
-			OperatedVector();
-	};
+using namespace Unsafe;
+
+int main(int argc, char *argv[])
+{
+	GC::Init();
+	String *args = new String[argc];
+	for(int i = 0; i < argc; i++)
+		args[i] = argv[i];
+	UnsafeTest::Main(&args);
+	GC::Collect();
 }
