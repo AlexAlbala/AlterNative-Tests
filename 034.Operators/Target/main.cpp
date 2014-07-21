@@ -27,9 +27,9 @@ using namespace Operators;
 int main(int argc, char *argv[])
 {
 	GC::Init();
-	String *args = new String[argc];
+	Array<String>* args = new Array<String>(argc);
 	for(int i = 0; i < argc; i++)
-		args[i] = argv[i];
+		args->SetData(i, new String(argv[i]));
 	MatrixTest::Main();
 	GC::Collect();
 }

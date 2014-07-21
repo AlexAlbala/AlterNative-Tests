@@ -38,6 +38,6 @@ namespace InterClassBoxing {
 		public:
 		static void Case4();
 		public:
-			static void Main(String* args[]);
+			static void Main(Array<String>* args);
 	};
 }

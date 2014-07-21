@@ -22,7 +22,7 @@ AlterNative @ 2014
 
 #include "Program.h"
 namespace ConsoleApplication1 {
-	void Program::Main(String* args[]){
+	void Program::Main(Array<String>* args){
 		String* b = new String("Hello");
 		String* c = new String(" ");
 		String* d = new String("World!");

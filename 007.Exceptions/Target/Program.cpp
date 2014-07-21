@@ -91,7 +91,7 @@ namespace ExceptionExample {
 		}
 		return result;
 	}
-	void Program::Main(String* args[])
+	void Program::Main(Array<String>* args)
 	{
 		Program::g(0);
 		Program::g(1);

@@ -32,6 +32,6 @@ namespace Templates {
 	class Program : public virtual Object
 	{
 		public:
-			static void Main(String* args[]);
+			static void Main(Array<String>* args);
 	};
 }

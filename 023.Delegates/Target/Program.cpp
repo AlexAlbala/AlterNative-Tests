@@ -22,7 +22,7 @@ AlterNative @ 2014
 
 #include "Program.h"
 namespace Delegates {
-	void Program::Main(String* args[]){
+	void Program::Main(Array<String>* args){
 		DelegatesTest* d = new DelegatesTest();
 		d->Test();
 	}

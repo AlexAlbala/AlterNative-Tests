@@ -22,7 +22,7 @@ AlterNative @ 2014
 
 #include "Program.h"
 namespace Covariance {
-	void Program::Main(String* args[]){
+	void Program::Main(Array<String>* args){
 		A_T<C>* a = new A_T<C>();
 		CovIEnumerator_T<C>* b = a->Get();
 		A_T<int>* a2 = new A_T<int>();

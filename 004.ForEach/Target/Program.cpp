@@ -22,7 +22,7 @@ AlterNative @ 2014
 
 #include "Program.h"
 namespace ForEach {
-	void Program::Main(String* args[]){
+	void Program::Main(Array<String>* args){
 		List_T<float>* myList = new List_T<float>();
 		myList->Add((float)5.6);
 		myList->Add((float)5.7);

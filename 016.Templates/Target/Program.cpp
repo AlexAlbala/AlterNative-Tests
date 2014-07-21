@@ -22,7 +22,7 @@ AlterNative @ 2014
 
 #include "Program.h"
 namespace Templates {
-	void Program::Main(String* args[]){
+	void Program::Main(Array<String>* args){
 		MyClass_T<A>* myA = new MyClass_T<A>();
 		myA->set(new A());
 		MyClass_T<B>* myB = new MyClass_T<B>();

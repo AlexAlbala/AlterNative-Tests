@@ -22,7 +22,7 @@ AlterNative @ 2014
 
 #include "Program.h"
 namespace AsIs {
-	void Program::Main(String* args[]){
+	void Program::Main(Array<String>* args){
 		Program* p = new Program();
 		p->AsIsTest();
 	}

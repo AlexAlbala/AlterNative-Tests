@@ -49,7 +49,7 @@ namespace Unsafe {
 		}
 		//End fixed block
 	}
-	void UnsafeTest::Main(String* args[])
+	void UnsafeTest::Main(Array<String>* args)
 	{
 		Array<char>* a = new Array<char>(100);
 		Array<char>* b = new Array<char>(100);

@@ -35,7 +35,7 @@ namespace PropertyConstructor {
 		public:
 			void setP(int value);
 		public:
-			static void Main(String* args[]);
+			static void Main(Array<String>* args);
 		private:
 		static void Main1();
 		private:

@@ -30,7 +30,7 @@ namespace CustomEvent {
 	class Program : public virtual Object
 	{
 		public:
-			static void Main(String* args[]);
+			static void Main(Array<String>* args);
 		private:
 			void Run();
 		private:

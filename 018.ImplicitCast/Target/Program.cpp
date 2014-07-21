@@ -22,7 +22,7 @@ AlterNative @ 2014
 
 #include "Program.h"
 namespace ImplicitCast {
-	void Program::Main(String* args[]){
+	void Program::Main(Array<String>* args){
 		A* ea = new A();
 		B* eb = new B();
 		C* ec = new C();

@@ -31,7 +31,7 @@ namespace Threads {
 	class Program : public virtual Object
 	{
 		public:
-			static void Main(String* args[]);
+			static void Main(Array<String>* args);
 		public:
 			void Run();
 		public:

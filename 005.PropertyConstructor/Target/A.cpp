@@ -29,7 +29,7 @@ namespace PropertyConstructor {
 	{
 		this->p = value;
 	}
-	void A::Main(String* args[])
+	void A::Main(Array<String>* args)
 	{
 		A::Main1();
 		A::Main2();

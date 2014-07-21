@@ -22,7 +22,7 @@ AlterNative @ 2014
 
 #include "Program.h"
 namespace StringSwitch {
-	void Program::Main(String* args[]){
+	void Program::Main(Array<String>* args){
 		Program* p = new Program();
 		p->LessThan6CasesSwitch(new String("case1"));
 		p->LessThan6CasesSwitch(new String("case3"));
