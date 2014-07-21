@@ -53,7 +53,7 @@ namespace InterClassBoxing {
 		Object* j = a->Get();
 		Console::WriteLine(j);
 	}
-	void Program::Main(String* args[])
+	void Program::Main(Array<String>* args)
 	{
 		Program::Case1();
 		Program::Case2();

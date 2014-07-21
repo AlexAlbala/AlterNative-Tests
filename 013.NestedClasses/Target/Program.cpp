@@ -22,7 +22,7 @@ AlterNative @ 2014
 
 #include "Program.h"
 namespace NestedClasses {
-	void Program::Main(String* args[]){
+	void Program::Main(Array<String>* args){
 		ParentClass* p = new ParentClass();
 		ParentClass::NestedClass1* n = new ParentClass::NestedClass1();
 		ParentClass::NestedClass2* n2 = new ParentClass::NestedClass2();

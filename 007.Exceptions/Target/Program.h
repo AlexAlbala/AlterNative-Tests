@@ -34,6 +34,6 @@ namespace ExceptionExample {
 		public:
 		static int f(int i);
 		public:
-			static void Main(String* args[]);
+			static void Main(Array<String>* args);
 	};
 }

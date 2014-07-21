@@ -33,7 +33,7 @@ namespace List {
 		private:
 			MyList* list;
 		public:
-			static void Main(String* args[]);
+			static void Main(Array<String>* args);
 		private:
 			void Run();
 		private:

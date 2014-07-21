@@ -32,6 +32,6 @@ namespace Unsafe {
 		private:
 		static void Copy(Array<char>* src, int srcIndex, Array<char>* dst, int dstIndex, int count);
 		public:
-			static void Main(String* args[]);
+			static void Main(Array<String>* args);
 	};
 }

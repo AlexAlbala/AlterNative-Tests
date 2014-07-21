@@ -22,7 +22,7 @@ AlterNative @ 2014
 
 #include "Program.h"
 namespace Arrays {
-	void Program::Main(String* args[]){
+	void Program::Main(Array<String>* args){
 		Program* p = new Program();
 		Array<int>* arr = new Array<int>(15);
 		for (int i = 0; i < arr->Length; i += 1){

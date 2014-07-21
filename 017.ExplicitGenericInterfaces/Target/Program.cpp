@@ -22,7 +22,7 @@ AlterNative @ 2014
 
 #include "Program.h"
 namespace ExplicitGenericInterfaces {
-	void Program::Main(String* args[]){
+	void Program::Main(Array<String>* args){
 		C_T<A>* c = new C_T<A>();
 		IA* a = *c;
 		a->f();

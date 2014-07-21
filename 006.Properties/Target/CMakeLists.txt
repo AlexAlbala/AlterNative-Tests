@@ -17,11 +17,11 @@ SET(EXECPATH Program.cpp Program.h main.cpp MyClassB.cpp MyClassB.h MyClassA.cpp
 
 ADD_EXECUTABLE(Properties ${EXECPATH})
 
-INCLUDE_DIRECTORIES(C:/Users/Alex/Desktop/AlterNative/Lib/src/private)
-INCLUDE_DIRECTORIES(C:/Users/Alex/Desktop/AlterNative/Lib/src/public)
+INCLUDE_DIRECTORIES(C:/Users/Alex/Desktop/Alter-Native/Lib/src/private)
+INCLUDE_DIRECTORIES(C:/Users/Alex/Desktop/Alter-Native/Lib/src/public)
 
-TARGET_LINK_LIBRARIES(Properties C:/Users/Alex/Desktop/AlterNative/Lib/build/libfiles/gc-lib.lib)
-TARGET_LINK_LIBRARIES(Properties C:/Users/Alex/Desktop/AlterNative/Lib/build/libfiles/System.lib)
+TARGET_LINK_LIBRARIES(Properties C:/Users/Alex/Desktop/Alter-Native/Lib/build/libfiles/gc-lib.lib)
+TARGET_LINK_LIBRARIES(Properties C:/Users/Alex/Desktop/Alter-Native/Lib/build/libfiles/System.lib)
 
 IF(UNIX)
 IF(NOT ANDROID)

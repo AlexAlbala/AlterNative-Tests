@@ -17,11 +17,11 @@ SET(EXECPATH Person.cpp Person.h A.cpp A.h B.cpp B.h C.cpp C.h Example_T.h Examp
 
 ADD_EXECUTABLE(Constraints ${EXECPATH})
 
-INCLUDE_DIRECTORIES(C:/Users/Alex/Desktop/AlterNative/Lib/src/private)
-INCLUDE_DIRECTORIES(C:/Users/Alex/Desktop/AlterNative/Lib/src/public)
+INCLUDE_DIRECTORIES(C:/Users/Alex/Desktop/Alter-Native/Lib/src/private)
+INCLUDE_DIRECTORIES(C:/Users/Alex/Desktop/Alter-Native/Lib/src/public)
 
-TARGET_LINK_LIBRARIES(Constraints C:/Users/Alex/Desktop/AlterNative/Lib/build/libfiles/gc-lib.lib)
-TARGET_LINK_LIBRARIES(Constraints C:/Users/Alex/Desktop/AlterNative/Lib/build/libfiles/System.lib)
+TARGET_LINK_LIBRARIES(Constraints C:/Users/Alex/Desktop/Alter-Native/Lib/build/libfiles/gc-lib.lib)
+TARGET_LINK_LIBRARIES(Constraints C:/Users/Alex/Desktop/Alter-Native/Lib/build/libfiles/System.lib)
 
 IF(UNIX)
 IF(NOT ANDROID)

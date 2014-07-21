@@ -32,7 +32,7 @@ namespace Structs {
 		array->SetData(3, BOX<int>(c.y));
 		Console::WriteLine(String::Concat(array));
 	}
-	void Program::Main(String* args[])
+	void Program::Main(Array<String>* args)
 	{
 		Coordinate defaultValue = Coordinate();
 		Coordinate c = Coordinate(1, 2);

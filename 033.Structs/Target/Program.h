@@ -34,6 +34,6 @@ namespace Structs {
 		public:
 		static void f(Coordinate c);
 		public:
-			static void Main(String* args[]);
+			static void Main(Array<String>* args);
 	};
 }

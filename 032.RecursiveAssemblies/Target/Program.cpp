@@ -22,7 +22,7 @@ AlterNative @ 2014
 
 #include "Program.h"
 namespace RecursiveAssemblies {
-	void Program::Main(String* args[]){
+	void Program::Main(Array<String>* args){
 		MyDepth1Class* c = new MyDepth1Class();
 		String* message = c->Ping(new String("Hello World"));
 		Console::WriteLine(new String("Sending Hello World..."));

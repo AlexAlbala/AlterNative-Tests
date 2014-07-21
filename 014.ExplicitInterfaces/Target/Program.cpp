@@ -22,7 +22,7 @@ AlterNative @ 2014
 
 #include "Program.h"
 namespace NestedClasses {
-	void Program::Main(String* args[]){
+	void Program::Main(Array<String>* args){
 		C* c = new C();
 		IA* a = *c;
 		a->f();
