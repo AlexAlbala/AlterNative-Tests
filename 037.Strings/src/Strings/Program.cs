@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Program {
 
-    public static void Func(String[] array) {
+    public static void Func(String[] v) {
         Console.WriteLine("-----");
         foreach(String s in v) {
             Console.WriteLine(s);
