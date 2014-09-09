@@ -22,22 +22,23 @@ AlterNative @ 2014
 
 #pragma once
 #include <System/System.h>
-#include <System/Random.h>
-#include "OperatedVector.h"
-#include <System/Console.h>
-#include "OperatedVector2.h"
+#include <System/Math.h>
 
 using namespace System;
 namespace Operators {
-	class MatrixTest : public virtual Object
+	class OperatedVector2 : public virtual Object
 	{
 		public:
-		static Random* m_rand;
+			double x;
 		public:
-			static void Main();
+			double y;
 		public:
-		static void InitMatrix(OperatedVector* mat, float f);
+			OperatedVector2(double x, double y);
 		public:
-		static void PrintMatrix(OperatedVector* mat);
+			OperatedVector2* norm();
+		public:
+		OperatedVector2* operator *(double b) {
+			return new OperatedVector2(this->x * b, this->y * b);
+		}
 	};
 }

@@ -13,7 +13,7 @@ PROJECT(OperatorsProj CXX)
 INCLUDE($ENV{ALTERNATIVE_TOOLS_PATH}/Code/CMAKE-CXX11.cmake)
 
 SET_PROPERTY(GLOBAL PROPERTY GL_IS_RELEASE 0)
-SET(EXECPATH OperatedVector.cpp OperatedVector.h MatrixTest.cpp MatrixTest.h main.cpp OperatedVector.cpp OperatedVector.h MatrixTest.cpp MatrixTest.h main.cpp)
+SET(EXECPATH OperatedVector.cpp OperatedVector.h OperatedVector2.cpp OperatedVector2.h MatrixTest.cpp MatrixTest.h main.cpp OperatedVector.cpp OperatedVector.h OperatedVector2.cpp OperatedVector2.h MatrixTest.cpp MatrixTest.h main.cpp)
 
 ADD_EXECUTABLE(Operators ${EXECPATH})
 

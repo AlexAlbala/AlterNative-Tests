@@ -36,6 +36,12 @@ namespace Operators {
 		Console::WriteLine();
 		Console::WriteLine(new String("Vector 1 + Vector 2 = "));
 		MatrixTest::PrintMatrix(mat3);
+		OperatedVector2* vec = new OperatedVector2(3.0, 4.0);
+		OperatedVector2* result = *vec * 5.0;
+		Console::Write(new String("X:"));
+		Console::WriteLine(result->x);
+		Console::Write(new String("Y:"));
+		Console::WriteLine(result->y);
 	}
 	void MatrixTest::InitMatrix(OperatedVector* mat, float f)
 	{

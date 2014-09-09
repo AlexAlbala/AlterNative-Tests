@@ -20,24 +20,15 @@ AlterNative @ 2014
 
 ***********************************************************************************/
 
-#pragma once
-#include <System/System.h>
-#include <System/Random.h>
-#include "OperatedVector.h"
-#include <System/Console.h>
 #include "OperatedVector2.h"
-
-using namespace System;
 namespace Operators {
-	class MatrixTest : public virtual Object
+	OperatedVector2::OperatedVector2(double x, double y){
+		this->x = x;
+		this->y = y;
+	}
+	OperatedVector2* OperatedVector2::norm()
 	{
-		public:
-		static Random* m_rand;
-		public:
-			static void Main();
-		public:
-		static void InitMatrix(OperatedVector* mat, float f);
-		public:
-		static void PrintMatrix(OperatedVector* mat);
-	};
+		return *(this) * (1.0 / Math::Sqrt((this->x * this->x) + (this->y * this->y)));
+	}
+
 }

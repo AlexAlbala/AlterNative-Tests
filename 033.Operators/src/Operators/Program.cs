@@ -27,6 +27,23 @@ namespace Operators
         }
     }
 
+    class OperatedVector2
+    {
+        public double x, y;
+        public OperatedVector2(double x, double y)
+        {
+            this.x = x; this.y = y;
+        }
+        public OperatedVector2 norm()
+        {
+            return this * (1.0 / System.Math.Sqrt(x * x + y * y));
+        }
+        public static OperatedVector2 operator *(OperatedVector2 a, double b)
+        {
+            return new OperatedVector2(a.x * b, a.y * b);
+        }
+    }
+
     class MatrixTest
     {
         // used in the InitMatrix method.
@@ -55,6 +72,15 @@ namespace Operators
             Console.WriteLine();
             Console.WriteLine("Vector 1 + Vector 2 = ");
             PrintMatrix(mat3);
+
+
+            OperatedVector2 vec1 = new OperatedVector2(3, 4);
+            OperatedVector2 result = vec1 * 5.0;
+
+            Console.Write("X:");
+            Console.WriteLine(result.x);
+            Console.Write("Y:");
+            Console.WriteLine(result.y);
         }
 
         // initialize matrix with random values
@@ -73,8 +99,8 @@ namespace Operators
             {
                 // format the output
                 Console.Write(mat[x]);
-                if ((x) < (OperatedVector.DimSize-1))
-                    Console.Write(", ");                
+                if ((x) < (OperatedVector.DimSize - 1))
+                    Console.Write(", ");
             }
             Console.WriteLine(" ]");
             Console.WriteLine();
