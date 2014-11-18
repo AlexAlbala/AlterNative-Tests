@@ -26,7 +26,7 @@ namespace SimpleEvent {
 	//Event declaration moved to header file
 	void SimpleEventClass::Start(){
 		for (int a = 0; a < 10; a += 1){
-			if (this->simpleEvent != null){
+			if (*(this->simpleEvent) != null){
 				EVENT_FIRE(this->simpleEvent, a, (float)(a + a));
 			}
 		}

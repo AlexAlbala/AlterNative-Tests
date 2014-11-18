@@ -44,6 +44,21 @@ namespace Operators
         }
     }
 
+    public class A
+    {
+        public A() { }
+        public static A operator -(A a, A b) { return new A(); }
+    }
+
+    public class B
+    {
+        public A a;
+        public A Foo(B b)
+        {
+            return a - b.a;
+        }
+    }
+
     class MatrixTest
     {
         // used in the InitMatrix method.

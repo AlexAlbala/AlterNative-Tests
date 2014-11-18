@@ -56,7 +56,7 @@ namespace List {
 		bool sorted = false;
 		while (!sorted) {
 			sorted = true;
-			for (int i = 0; i < this->length - 1; i += 1) {
+			for (int i = 0; i < (this->length - 1); i += 1) {
 				Node* n = this->getElementAt(i);
 				Node* n2 = this->getElementAt(i + 1);
 				if (n->value > n2->value) {
@@ -76,7 +76,7 @@ namespace List {
 			Node* nant = this->getElementAt(pos1 - 1);
 			nant->next = n2;
 		}
-		if (pos2 == 1 && pos1 == 0) {
+		if ((pos2 == 1) && (pos1 == 0)) {
 			this->first = n2;
 		}
 	}

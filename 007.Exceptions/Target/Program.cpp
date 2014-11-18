@@ -69,7 +69,7 @@ namespace ExceptionExample {
 						result = j;
 						return result;
 					}
-					if (i == 3 || i == 4) {
+					if ((i == 3) || (i == 4)) {
 						j = 3;
 						throw new Exception();
 					}
