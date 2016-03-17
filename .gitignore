@@ -7,3 +7,4 @@ obj
 **/bin/Release
 **/Output
 **/src/*/bin
+.DS_Store
